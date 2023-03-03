@@ -38,7 +38,15 @@ public class HW2_1 {
         //
         //Вывести/напечатать смайлик (не :), а настоящий смайлик одним символом).
 
-        String smile = "\uD83D\uDC7D";
+        char smile = '\u1601';
         System.out.println(smile);
+    }
+
+    public static boolean isTeen(int nr1){
+        return (nr1 >= 13 && nr1 <= 19);
+    }
+
+    public static boolean hasTeen(int nr1, int nr2, int nr3){
+        return isTeen(nr1) || isTeen(nr2) || isTeen(nr3);
     }
 }
